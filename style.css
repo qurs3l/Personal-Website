@@ -1,5 +1,5 @@
 body{
-    background-color: #f4f6f2;
+    background-color: #f6fff8;;
     margin: 0;
     padding: 0;
 }
@@ -25,7 +25,7 @@ body{
     margin: 10px 0;
     padding: 10px;
     position: relative; /* Add this */
-    color: #f4f6f2;
+    color:#f6fff8;
     z-index: 2; /* Add this */
 }
 
@@ -38,7 +38,7 @@ body{
     margin-right: 20px;
     position: relative;
     font-size: larger;
-    color:#f4f6f2;
+    color:#f6fff8;;
     z-index: 2;
 }
 
@@ -63,8 +63,8 @@ nav li {
     position: absolute;
     height: 270px;
     width: 270px;
-    top: 48px;
-    left: 162px;
+    top: 86px;
+    left: 210px;
     z-index: 3;
     animation: slideInTop 2s, rotate 2s linear infinite 2s;
     transform-origin: center center;
@@ -74,10 +74,39 @@ nav li {
     position: relative;
     left: 75px;
     z-index: 2;
-    height: 492px;
-    width: 440px;
+    height: 592px;
+    width: 540px;
     animation: slideInLeft 2s;
     float: left;
+}
+
+.welcome{
+    position: relative;
+    color: #2E4756;
+    font-family: Altone;
+    font-size: 65px;
+    margin-top: 230px;
+    margin-left: 50%;
+    z-index: 8;
+}
+
+.name{
+    position: relative;
+    color: #2E4756;
+    font-family:myFont;
+    font-size: 70px;
+    margin-left: 80px; 
+    margin-left: 56%;
+    z-index: 8;
+
+}
+
+.guitar {
+    position: relative;
+    height: 184px;
+    width: 184px;
+    left: 35%;
+    margin-top: -8%;
 }
 
 @keyframes slideInLeft {
@@ -123,8 +152,31 @@ nav li {
 }
 
 .custom-shape-divider-top-1693693950 .shape-fill {
-    fill: #285943;
+    fill: #3C7A89;
 }
+
+.a {
+    position: relative;
+    color: #285943;
+    font-family: myFont;
+    font-size: 100px;
+    margin-top: -400px;
+    margin-left: 65%;
+    animation: slideInLeft 3s;
+    z-index: 4;
+}
+
+.me {
+    position: relative;
+    width: 189px;
+    height: 252px;
+    margin-left: 70%;
+    margin-top: 10px;
+    border: 10px solid #285943;
+    animation: slideInLeft 3s;
+    z-index: 4;
+}
+
 
 .intro{
     display: flex;
@@ -135,11 +187,33 @@ nav li {
     align-items: center;
     flex-wrap: wrap;
     padding: 0%;
-    margin-top: 3%;
-    margin-left: 50%;
-    background-color: #4a6fa5;
+    margin-top: 32%;
+    margin-left: 10%;
+    background-color: #2E4756;
     position: relative;
-    color: #f4f6f2;
+    color: #f6fff8;;
+    font-family: Altone;
+    font-size: larger;
+    text-align: center;
+    z-index: 4;
+    animation: slideRight;
+    animation-duration: 4s;
+}
+
+.intro2{
+    display: flex;
+    width: 450px;
+    height: 200px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 10px;
+    background-color: #b7d1da;
+    position: relative;
+    color: #f6fff8;;
     font-family: Altone;
     font-size: larger;
     text-align: center;
@@ -157,27 +231,49 @@ nav li {
     }
   }
 
+  .cd-doodle{
+    position: relative;
+    height: 108px;
+    width: 108px;
+    margin-left: 85%;
+    margin-bottom: 10px;
+    top: 150px;
+    z-index: 6;
+    
+}
+.res-image {
+    position: relative;
+    margin-top: 20%;
+    margin-left: 15%;
+    border: 10px solid #2E4756;
+
+
+    width: 850px;
+    height: 1000px;
+    z-index: 7;
+}
+
 
   .custom-shape-divider-bottom-1693690961 {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    z-index: 5;
 }
 
 .custom-shape-divider-bottom-1693690961 svg {
     position: relative;
     display: block;
     width: calc(163% + 1.3px);
-    height: 258px;
+    height: auto;
 }
 
-
 .custom-shape-divider-bottom-1693690961 .shape-fill {
-    fill: #FFFFFF;
+    fill: #6b9080;
 }
 
 *{
@@ -185,6 +281,3 @@ nav li {
     margin:0;
     box-sizing: border-box;
 }
-
-
-

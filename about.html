@@ -3,35 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>About</title>
-    <header>
-        <div class = "container">
-            <div class = "header">Seline Qureshi</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">Service</a></li>
-                    <li><a href="port.html">Portfolio</a></li>
-                    <li><a href="qual.html">Qualifications</a></li>
-                </ul>
-            </nav>
-        
-        </div>
-    </header>
+    <title>About Flex</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* White container background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            color: #e74c3c; /* Red header text */
+        }
+        .navbar {
+            background-color: #3498db; /* Blue background for the navbar */
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff; /* White text color for the navbar links */
+        }
+        .about-flex {
+            padding: 20px;
+            background-color: #ffffff; /* White background for the About section */
+            border-radius: 10px;
+            color: #333; /* Dark text color for the About section */
+        }
+        .about-flex h2 {
+            font-size: 24px;
+        }
+        .about-flex p {
+            font-size: 18px;
+            line-height: 1.4;
+            margin: 0;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="custom-shape-divider-top-1693693950">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
-    
-    <div class="custom-shape-divider-bottom-1693690961">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
+    <div class="container">
+        <div class="header">
+            <h1>About Flex</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="port.html">Portfolio</a></li>
+                <li><a href="qual.html">Qualifications</a></li>
+            </ul>
+        </nav>
+        <div class="about-flex">
+            <h2>Meet Flex 🐶</h2>
+            <p>Flex is a lovable and energetic dog who brings joy to everyone he meets. With his shiny coat, wagging tail, and friendly personality, he's the perfect companion for adventures big and small.</p>
+            <p>Flex enjoys long walks in the park, playing fetch, and napping in the sun. He's always up for a game of catch or a cuddle on the couch. Flex is not just a pet; he's a part of the family.</p>
+            <p>When he's not exploring the great outdoors or chasing after his favorite squeaky toy, you can find Flex curled up by the fireplace, dreaming of more adventures to come.</p>
+        </div>
     </div>
 </body>
 </html>
