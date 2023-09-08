@@ -24,9 +24,9 @@ body{
     font-size: 50px;
     margin: 10px 0;
     padding: 10px;
-    position: relative; /* Add this */
+    position: relative; 
     color:#f6fff8;
-    z-index: 2; /* Add this */
+    z-index: 2; 
 }
 
 .container {
@@ -37,7 +37,6 @@ body{
     padding: 10px;
     margin-right: 20px;
     position: relative;
-    font-size: larger;
     color:#f6fff8;;
     z-index: 2;
 }
@@ -53,6 +52,17 @@ nav ul {
 nav li {
     list-style: none;
     margin-left: 20px; 
+    position: relative;
+}
+
+nav a{
+    color:#f6fff8;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    transform: translateY(-5px); 
 }
 
 .content {
@@ -84,9 +94,9 @@ nav li {
     position: relative;
     color: #2E4756;
     font-family: Altone;
-    font-size: 65px;
+    font-size: 85px;
     margin-top: 230px;
-    margin-left: 50%;
+    margin-left: 45%;
     z-index: 8;
 }
 
@@ -94,9 +104,8 @@ nav li {
     position: relative;
     color: #2E4756;
     font-family:myFont;
-    font-size: 70px;
-    margin-left: 80px; 
-    margin-left: 56%;
+    font-size: 100px;
+    margin-left: 50%; 
     z-index: 8;
 
 }
@@ -105,7 +114,7 @@ nav li {
     position: relative;
     height: 184px;
     width: 184px;
-    left: 35%;
+    left: 45%;
     margin-top: -8%;
 }
 
@@ -159,19 +168,19 @@ nav li {
     position: relative;
     color: #285943;
     font-family: myFont;
-    font-size: 100px;
-    margin-top: -400px;
-    margin-left: 65%;
+    font-size: 125px;
+    margin-top: -420px;
+    margin-left: 55%;
     animation: slideInLeft 3s;
     z-index: 4;
 }
 
 .me {
     position: relative;
-    width: 189px;
-    height: 252px;
-    margin-left: 70%;
-    margin-top: 10px;
+    width: 252px;
+    height: 336px;
+    margin-left: 60%;
+    margin-top: 5px;
     border: 10px solid #285943;
     animation: slideInLeft 3s;
     z-index: 4;
@@ -187,8 +196,8 @@ nav li {
     align-items: center;
     flex-wrap: wrap;
     padding: 0%;
-    margin-top: 32%;
-    margin-left: 10%;
+    margin-top: 15%;
+    margin-left: 8%;
     background-color: #2E4756;
     position: relative;
     color: #f6fff8;;
@@ -242,15 +251,248 @@ nav li {
     
 }
 .res-image {
+    display: block;
     position: relative;
-    margin-top: 20%;
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 50%;
     border: 10px solid #2E4756;
 
-
-    width: 850px;
-    height: 1000px;
     z-index: 7;
+}
+
+.services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2E4756;
+    margin-top: 5%
+}
+
+.service1{
+    display: flex;
+    flex-direction: column;
+    background-color: #cce3de;
+    height: 300px;
+    width: 600px;
+    border-radius: 25px;
+    font-family: Altone;
+    z-index: 9;
+    animation: slideInLeft 3s;
+}
+
+.AWICS-header {
+    margin-top: 10%;
+    text-align: center;
+    animation: slideInLeft 3s;
+}
+
+.AWICS-des {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    animation: slideInLeft 3s;
+}
+
+.AWICS {
+    justify-content: right;
+    align-items: right;
+    width: 250px;
+    height: 140px;
+    margin-left: 75%;
+    margin-top: 3%;
+    border: 5px solid #d994bd;
+    border-radius: 25px;
+    z-index: 10;
+    animation: slideRight 3s;
+}
+
+.service2{
+    display: flex;
+    flex-direction: column;
+    font-family: Altone;
+    background-color: #cce3de;
+    height: 300px;
+    width: 600px;
+    border-radius: 25px;
+    margin-top: 5%;
+    z-index: 9;
+    animation: slideInLeft 3s;
+}
+
+.Peer-header {
+    font-size: xx-large;
+    margin-top: 10%;
+    text-align: center;
+    animation: slideInLeft 3s;
+}
+
+.Peer-des {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    animation: slideInLeft 3s;
+}
+
+.tamu-logo {
+    justify-content: right;
+    align-items: right;
+    width: 250px;
+    height: 140px;
+    margin-left: 75%;
+    margin-top: 5%;
+    border: 5px solid #320612;
+    border-radius: 25px;
+    z-index: 10;
+    animation: slideInRight 3s;
+}
+
+.Tech {
+    font-family: myFont;
+    font-size: xxx-large;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-top: 2%;
+    color: #4a6fa5;
+}
+
+.res-down {
+    margin-top: 2%;
+    text-align: center;
+    font-family: Altone;
+    text-decoration: none;
+    color: #2E4756;
+}
+
+.Tskills {
+    font-family: Altone;
+    text-align: center;
+    list-style-type: none; 
+    padding: 0;
+    color: #4a6fa5;
+}
+
+.projects {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    animation: slideInTop 2s;
+}
+
+.project1{
+    display: flex;
+    flex-direction: column;
+    background-color: #cce3de;
+    height: 300px;
+    width: 600px;
+    border-radius: 25px;
+    z-index: 9;
+}
+.Proj1-header {
+    font-family: Altone;
+    margin-top: 10%;
+    text-align: center;
+
+}
+
+.Proj1-des {
+    font-family: Altone;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+}
+.project2{
+    display: flex;
+    flex-direction: column;
+    background-color: #cce3de;
+    margin-top: 5%;
+    height: 300px;
+    width: 600px;
+    border-radius: 25px;
+    z-index: 9;
+}
+
+.Proj2-header {
+    font-family: Altone;
+    margin-top: 10%;
+    text-align: center;
+
+}
+
+.Proj2-des {
+    font-family: Altone;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+}
+
+.project3{
+    display: flex;
+    flex-direction: column;
+    background-color: #cce3de;
+    margin-top: 5%;
+    height: 300px;
+    width: 600px;
+    border-radius: 25px;
+    z-index: 9;
+}
+
+.Proj3-header {
+    font-family: Altone;
+    margin-top: 10%;
+    text-align: center;
+
+}
+
+.Proj3-des {
+    font-family: Altone;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    z-index: 11;
+}
+
+.socials a {
+    display: inline-block; 
+    margin: 0 10px;
+}
+
+.socials img {
+    width: 50px; 
+    height: 50px; 
+    border: 5px solid #2E4756;
+    border-radius: 50%;
+}
+
+.Find {
+    text-align: center;
+    font-family: myFont;
+    font-size: 70px;
+    margin-top: 5%;
+    color: #4a6fa5;
 }
 
 

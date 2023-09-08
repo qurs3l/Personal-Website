@@ -1,67 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Flex</title>
+    <title>My Favorite Music Albums</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff; /* White container background */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            text-align: center;
-            padding: 20px;
-            font-size: 28px;
-            color: #e74c3c; /* Red header text */
-        }
-        .navbar {
-            background-color: #3498db; /* Blue background for the navbar */
-        }
-        .navbar ul {
-            list-style: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
         }
-        .navbar li {
-            margin: 0 10px;
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
         }
-        .navbar a {
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
             text-decoration: none;
-            color: #ffffff; /* White text color for the navbar links */
+            color: #fff;
         }
-        .about-flex {
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .genre-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .genre {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             padding: 20px;
-            background-color: #ffffff; /* White background for the About section */
-            border-radius: 10px;
-            color: #333; /* Dark text color for the About section */
+            text-align: center;
+            max-width: 300px;
+            margin: 10px;
         }
-        .about-flex h2 {
-            font-size: 24px;
+
+        .album-image {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
-        .about-flex p {
-            font-size: 18px;
-            line-height: 1.4;
-            margin: 0;
+
+        .album-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .album-list li {
+            margin: 5px 0;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>About Flex</h1>
-        </div>
-        <nav class="navbar">
+    <header>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="service.html">Service</a></li>
@@ -69,12 +90,84 @@
                 <li><a href="qual.html">Qualifications</a></li>
             </ul>
         </nav>
-        <div class="about-flex">
-            <h2>Meet Flex 🐶</h2>
-            <p>Flex is a lovable and energetic dog who brings joy to everyone he meets. With his shiny coat, wagging tail, and friendly personality, he's the perfect companion for adventures big and small.</p>
-            <p>Flex enjoys long walks in the park, playing fetch, and napping in the sun. He's always up for a game of catch or a cuddle on the couch. Flex is not just a pet; he's a part of the family.</p>
-            <p>When he's not exploring the great outdoors or chasing after his favorite squeaky toy, you can find Flex curled up by the fireplace, dreaming of more adventures to come.</p>
+    </header>
+
+    <h1>My Favorite Music Albums</h1>
+    
+    <div class="genre-container">
+        <div class="genre" id="rock">
+            <h2>Rock</h2>
+            <ul class="album-list">
+                <li>
+                    <img src="images/Inrainbows.png" alt="Album 1 Cover" class="album-image">
+                    In Rainbows - Radiohead
+                </li>
+                <li>
+                    <img src="images/SiameseDream.jpeg" alt="Album 2 Cover" class="album-image">
+                    Siamese Dream - The Smashing Pumpkins
+                </li>
+                <li>
+                    <img src="images/Faith.jpeg" alt="Album 3 Cover" class="album-image">
+                    Faith - The Cure
+                </li>
+            </ul>
+            <h3>Top Three Songs:</h3>
+            <ol class="album-list">
+                <li>House of Cards</li>
+                <li>Mayonaise</li>
+                <li>Primary</li>
+            </ol>
         </div>
+        
+        <div class="genre" id="pop">
+            <h2>Pop</h2>
+            <ul class="album-list">
+                <li>
+                    <img src="images/Sawayama.png" alt="Album 4 Cover" class="album-image">
+                    SAWAYAMA - Rina Sawayama
+                </li>
+                <li>
+                    <img src="images/Melodrama.png" alt="Album 5 Cover" class="album-image">
+                    Melodrama - Lorde
+                </li>
+                <li>
+                    <img src="images/1989.png" alt="Album 6 Cover" class="album-image">
+                    1989 - Taylor Swift
+                </li>
+            </ul>
+            <h3>Top Three Songs:</h3>
+            <ol class="album-list">
+                <li>Snakeskin</li>
+                <li>Hard Feelings/Loveless</li>
+                <li>Clean</li>
+            </ol>
+        </div>
+        
+        <div class="genre" id="indie">
+            <h2>Indie</h2>
+            <ul class="album-list">
+                <li>
+                    <img src="images/punisher.png" alt="Album 7 Cover" class="album-image">
+                    Punisher - Phoebe Bridgers
+                </li>
+                <li>
+                    <img src="images/therecord.jpeg" alt="Album 8 Cover" class="album-image">
+                    The Record - boygenius
+                </li>
+                <li>
+                    <img src="images/softsounds.png" alt="Album 9 Cover" class="album-image">
+                    Soft Sounds from Another Planet - Japanese Breakfast
+                </li>
+            </ul>
+            <h3>Top Three Songs:</h3>
+            <ol class="album-list">
+                <li>Punisher</li>
+                <li>Revolution 0</li>
+                <li>Machinist</li>
+            </ol>
+        </div>
+    
     </div>
+
 </body>
 </html>
