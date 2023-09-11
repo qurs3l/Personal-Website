@@ -78,6 +78,21 @@
             color: #555;
             margin-top: 10px;
         }
+
+        #playlist-link, #ai-link {
+            margin-top: 20px;
+            text-align: center;
+            padding-left: 20px;
+        }
+
+        #prompts-textarea {
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -168,6 +183,25 @@
         </div>
     
     </div>
+
+    <div id="playlist-link">
+        <strong>Playlist Link:</strong>
+        <a href="https://open.spotify.com/playlist/6kqz3lp78PwAcHG3R9uViu?si=07780f4f2f9745ce" target="_blank">My Favorite Songs</a>
+    </div>
+
+    <div id="ai-link">
+        <strong>ChatGPT:</strong>
+        <a href="https://chat.openai.com/" target="_blank">Try out AI</a>
+    </div>
+    <p id="prompts-textarea">
+        <br>Can you generate a webpage where I can list my favorite music albums </br>
+        <br>When the page opens can you make it into a grid shape where each column is a different genre</br>
+        <br>There should also be an area for me to list different songs from each album</br>
+        <br>Add an area where I can add a link to the playlist with the songs from these albums</br>
+
+    </p>
+
+
 
 </body>
 </html>

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Qualifications</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src=”functions.js”></script>
+    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="style.css"></link>
 
     <header>
         <div class = "container">
@@ -18,6 +19,13 @@
                     <li><a href="service.html">Service</a></li>
                 </ul>
             </nav>
+           
+            <div class = "header2">Seline Qureshi</div>
+            <div class="socials2">
+                <a href="https://github.com/qurs3l"><img src="images/GitHub-Mark.png" alt="Git"></a>
+                <a href="www.linkedin.com/in/seline-qureshi"><img src="images/linkedin.jpg" alt="Linkedin"></a>
+                <a href="https://instagram.com/slne174?igshid=NzZlODBkYWE4Ng=="><img src="images/instagram.jpeg" alt="Insta"></a>
+            </div>
         
         </div>
     </header>
@@ -28,16 +36,19 @@
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
     </div>
-    <img class="res-image" src="images/Resume.jpg">
-    <p class = "res-down"><a href="Resume.pdf">Download Resume</a></p>
+    <div class = "resume">
+        <img id="res-image" src="images/Resume.jpg">
+        <a href="Resume.pdf" id = "res-down">Download Resume</a></p>
+    </div>
+    <div class="T">
         <h1 class="Tech">Technical Skills</h1>
-        <p class="Tskills">
-            <br>Languages: C++, Java, JavaScript, HTML, CSS, Python</br>
-            <br>Developer Tools: VSCode, Git, Eclipse</br>
-            <br>Current Interests: AWS Cloud Practitioner</br>
-            <br>Other: Latex, Microsoft Office Suite, Procreate</br>
-     
-        </p>
+            <p class="Tskills">
+                <br>Languages: C++, Java, JavaScript, HTML, CSS, Python</br>
+                <br>Developer Tools: VSCode, Git, Eclipse</br>
+                <br>Current Interests:<a href = "https://aws.amazon.com/training/" class="AWS"> AWS Cloud Practitioner</a>, Full Stack, Back End</br>
+                <br>Other: Latex, Microsoft Office Suite, Procreate</br>
+            </p>
+    </div>
 
 
     <div class="custom-shape-divider-bottom-1693690961">
@@ -45,6 +56,9 @@
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
     </div>
-    
+    <div class = "button">
+        <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+        <script src = "functions.js"></script>
+    </div>
 </body>
 </html>

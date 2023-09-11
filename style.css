@@ -1,9 +1,30 @@
+.header2 {
+    display: none;
+}
+
+.socials2 {
+    display: none;
+}
+
+.box, .box2{
+    display: none;
+}
+
+.welcome2, .name2, .me2 {
+    display: none;
+}
+
 body{
-    background-color: #f6fff8;;
+    background-color: #f6fff8;
     margin: 0;
     padding: 0;
 }
 
+.line1 {
+    position: relative;
+    z-index: 3;
+    margin-top: 20%;
+}
 
 @font-face {
     font-family: myFont;
@@ -59,11 +80,9 @@ nav a{
     color:#f6fff8;
     text-decoration: none;
     font-size: larger;
+    transform: all 300ms ease-in-out;
 }
 
-nav a:hover {
-    transform: translateY(-5px); 
-}
 
 .content {
     position: relative;
@@ -73,7 +92,7 @@ nav a:hover {
     position: absolute;
     height: 270px;
     width: 270px;
-    top: 86px;
+    top: 85px;
     left: 210px;
     z-index: 3;
     animation: slideInTop 2s, rotate 2s linear infinite 2s;
@@ -165,39 +184,37 @@ nav a:hover {
 }
 
 .a {
-    position: relative;
+    position: absolute;
     color: #285943;
+    text-wrap: nowrap;
     font-family: myFont;
     font-size: 125px;
-    margin-top: -420px;
-    margin-left: 55%;
     animation: slideInLeft 3s;
-    z-index: 4;
+    top: 80px;
+    z-index: 5;
 }
 
 .me {
-    position: relative;
+    position: absolute;
     width: 252px;
     height: 336px;
-    margin-left: 60%;
-    margin-top: 5px;
     border: 10px solid #285943;
     animation: slideInLeft 3s;
-    z-index: 4;
+    z-index: 5;
 }
 
+.intro-container {
+    margin: 0 auto;
+    position: relative;
+    top: -385px;
+}
 
 .intro{
     display: flex;
-    width: 450px;
-    height: 200px;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0%;
-    margin-top: 15%;
-    margin-left: 8%;
     background-color: #2E4756;
     position: relative;
     color: #f6fff8;;
@@ -209,28 +226,18 @@ nav a:hover {
     animation-duration: 4s;
 }
 
-.intro2{
-    display: flex;
-    width: 450px;
-    height: 200px;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0%;
-    margin-left: 10%;
-    margin-top: 10px;
-    background-color: #b7d1da;
-    position: relative;
-    color: #f6fff8;;
-    font-family: Altone;
-    font-size: larger;
-    text-align: center;
-    z-index: 4;
-    animation: slideRight;
-    animation-duration: 4s;
+.p1 {
+    margin-top: 3%;
 }
 
+.p2, .p3, .p4 {
+    margin-top: 10px;
+}
+
+#Demo {
+    text-decoration: underline;
+    color:#2E4756;
+}
 @keyframes slideRight {
     0% {
       transform: translateX(100%);
@@ -250,7 +257,34 @@ nav a:hover {
     z-index: 6;
     
 }
-.res-image {
+
+.button {
+    position: relative; 
+    margin-left:85%;
+    margin-top: -15%;
+    z-index: 6;
+
+
+}
+
+.button button { 
+    background-color: #4a6fa5;
+    color: #FBFFF1;
+    border: #4a6fa5;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 6;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+}
+
+#res-image {
     display: block;
     position: relative;
     margin-left: auto;
@@ -279,7 +313,6 @@ nav a:hover {
     height: 300px;
     width: 600px;
     border-radius: 25px;
-    font-family: Altone;
     z-index: 9;
     animation: slideInLeft 3s;
 }
@@ -287,6 +320,7 @@ nav a:hover {
 .AWICS-header {
     margin-top: 10%;
     text-align: center;
+    font-family: myFont;
     animation: slideInLeft 3s;
 }
 
@@ -295,6 +329,7 @@ nav a:hover {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
+    font-family: Altone;
     animation: slideInLeft 3s;
 }
 
@@ -314,28 +349,44 @@ nav a:hover {
 .service2{
     display: flex;
     flex-direction: column;
-    font-family: Altone;
     background-color: #cce3de;
+    font-family: Altone;
     height: 300px;
     width: 600px;
     border-radius: 25px;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 15%;
     z-index: 9;
     animation: slideInLeft 3s;
 }
 
-.Peer-header {
-    font-size: xx-large;
-    margin-top: 10%;
-    text-align: center;
+.service3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #cce3de;
+    font-family: Altone;
+    height: 300px;
+    width: 600px;
+    border-radius: 25px;
+    margin-bottom: 15%;
+    z-index: 9;
     animation: slideInLeft 3s;
 }
 
-.Peer-des {
+.Peer-header, .food-header {
+    font-size: xx-large;
+    margin-top: 10%;
+    text-align: center;
+    font-family: myFont;
+    animation: slideInLeft 3s;
+}
+
+.Peer-des, .food-des {
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
+    font-family: Altone;
     animation: slideInLeft 3s;
 }
 
@@ -352,6 +403,19 @@ nav a:hover {
     animation: slideInRight 3s;
 }
 
+.food-bank {
+    justify-content: right;
+    align-items: right;
+    width: 250px;
+    height: 140px;
+    margin-left: 75%;
+    margin-top: 5%;
+    border: 5px solid #285943;
+    border-radius: 25px;
+    z-index: 10;
+    animation: slideInRight 3s;
+}
+
 .Tech {
     font-family: myFont;
     font-size: xxx-large;
@@ -362,19 +426,26 @@ nav a:hover {
     color: #4a6fa5;
 }
 
-.res-down {
-    margin-top: 2%;
+#res-down {  
     text-align: center;
+    margin-top: 2%;
     font-family: Altone;
-    text-decoration: none;
+    text-decoration: underline;
     color: #2E4756;
 }
+
 
 .Tskills {
     font-family: Altone;
     text-align: center;
     list-style-type: none; 
     padding: 0;
+    color: #4a6fa5;
+}
+
+.AWS {
+    font-family: Altone;
+    text-decoration: underline;
     color: #4a6fa5;
 }
 
@@ -388,17 +459,23 @@ nav a:hover {
     animation: slideInTop 2s;
 }
 
+.projects a{
+    text-decoration: none;
+}
+
 .project1{
     display: flex;
     flex-direction: column;
     background-color: #cce3de;
-    height: 300px;
+    height: 350px;
     width: 600px;
     border-radius: 25px;
     z-index: 9;
 }
 .Proj1-header {
-    font-family: Altone;
+    font-family: myFont;
+    font-size: 50px;
+    color: #2E4756;
     margin-top: 10%;
     text-align: center;
 
@@ -409,69 +486,50 @@ nav a:hover {
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    color: #2E4756;
     text-align: center;
 
 }
-.project2{
+.project2, .project3,.project4{
     display: flex;
     flex-direction: column;
     background-color: #cce3de;
     margin-top: 5%;
-    height: 300px;
+    height: 350px;
     width: 600px;
     border-radius: 25px;
     z-index: 9;
 }
 
-.Proj2-header {
-    font-family: Altone;
+.project4 {
+    margin-bottom: 10%;
+}
+
+.Proj2-header, .Proj3-header, .Proj4-header {
+    font-family: myFont;
+    color:#2E4756;
+    font-size: 50px;
     margin-top: 10%;
     text-align: center;
 
 }
 
-.Proj2-des {
+.Proj2-des, .Proj3-des, .Proj4-des {
     font-family: Altone;
+    color: #2E4756;
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-
 }
 
-.project3{
-    display: flex;
-    flex-direction: column;
-    background-color: #cce3de;
-    margin-top: 5%;
-    height: 300px;
-    width: 600px;
-    border-radius: 25px;
-    z-index: 9;
-}
-
-.Proj3-header {
-    font-family: Altone;
-    margin-top: 10%;
-    text-align: center;
-
-}
-
-.Proj3-des {
-    font-family: Altone;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-
-}
 
 .socials {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-bottom: 15%;
     z-index: 11;
 }
 
@@ -488,13 +546,19 @@ nav a:hover {
 }
 
 .Find {
+    position: relative;
     text-align: center;
+    padding-top: 5%;
     font-family: myFont;
     font-size: 70px;
-    margin-top: 5%;
     color: #4a6fa5;
 }
 
+.about1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
   .custom-shape-divider-bottom-1693690961 {
     position: relative;
@@ -522,4 +586,27 @@ nav a:hover {
     padding: 0;
     margin:0;
     box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+    .intro-container {
+        top: 0%;
+        width: 50%;
+        left: -15%;
+        top: 0%;
+    }
+   
+    .a {
+        top: 100%;
+        left: 65%;
+    }
+
+    .me {
+        left: 70%;
+        top: 135%;
+    }
+
+
+
+
 }

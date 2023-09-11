@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Service</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src=”functions.js”></script>
+    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="style.css"></link>
 
     <header>
         <div class = "container">
@@ -18,6 +19,13 @@
                     <li><a href="qual.html">Qualifications</a></li>
                 </ul>
             </nav>
+           
+            <div class = "header2">Seline Qureshi</div>
+            <div class="socials2">
+                <a href="https://github.com/qurs3l"><img src="images/GitHub-Mark.png" alt="Git"></a>
+                <a href="www.linkedin.com/in/seline-qureshi"><img src="images/linkedin.jpg" alt="Linkedin"></a>
+                <a href="https://instagram.com/slne174?igshid=NzZlODBkYWE4Ng=="><img src="images/instagram.jpeg" alt="Insta"></a>
+            </div>
         
         </div>
     </header>
@@ -31,17 +39,28 @@
     
     <div class="services">
         <div class="service1">
-            <h1 class="AWICS-header">Aggie Women in Computer Science</h1>
-            <p class="AWICS-des">AWICS is an organization that promotes diversity, equity, and inclusion in the computer science field. We strive to give equal opportunities to women in Computer Science! Click the image to see more!</p>
+            <h1 class="AWICS-header">01 - Aggie Women in Computer Science</h1>
+            <p class="AWICS-des">During my sophomore and current junior year, I have been a member of the organization Aggie Women in Computer Science. AWICS is an organization that promotes diversity, equity, and inclusion in the computer science field. We strive to give equal opportunities to women in Computer Science! Click the image to see more!</p>
             <a href="https://www.awics.org/"><img class="AWICS" src="images/AWICS.png" alt="AWICS"></a>
         </div>
     
         <div class="service2">
-            <h2 class="Peer-header">Peer Tutor</h2>
-            <p class="Peer-des">Peer Tutors provide academic guidance and help to other engineering students. We also mentor freshman TAMU engineers about the ETAM process and career opportunities! Click the image to see more!</p>
+            <h2 class="Peer-header">02 - Peer Tutor</h2>
+            <p class="Peer-des">During my sophomore year, I worked as a Peer Tutor for an introductory programming class for freshman engineers. Peer Tutors provide academic guidance and help to other engineering students. We also mentor freshman TAMU engineers about the ETAM process and career opportunities! Click the image to see more!</p>
             <a href="https://engineering.tamu.edu/cse/academics/peer-teachers/index.html"><img class="tamu-logo" src="images/tamu-logo.jpeg" alt="tamu-logo"></a>
         </div>
-    
+
+        <div class="service3">
+            <h2 class="food-header">03 - Houston Food Bank</h2>
+            <p class="food-des">I have been volunteering at the Houston Food Bank for Lunches of Loves since my freshman year of high school. During these events, volunteers work together to create lunch bags for children who cannot afford school lunch. Click the image to see more!</p>
+            <a href="https://www.houstonfoodbank.org/"><img class="food-bank" src="images/food-bank.jpeg" alt="food-bank"></a>
+        </div>
+
+    </div>
+
+    <div class = "button">
+        <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+        <script src = "functions.js"></script>
     </div>
     
     <div class="custom-shape-divider-bottom-1693690961">
@@ -50,5 +69,6 @@
         </svg>
     </div>
     
+
 </body>
 </html>

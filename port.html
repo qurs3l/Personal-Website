@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>About</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Portfolio</title>
+    <script src=”functions.js”></script>
+    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="style.css"></link>
 
     <header>
         <div class = "container">
@@ -13,14 +14,22 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">Service</a></li>
                     <li><a href="about.html">AI-Page</a></li>
                     <li><a href="qual.html">Qualifications</a></li>
+                    <li><a href="service.html">Service</a></li>
                 </ul>
             </nav>
+           
+            <div class = "header2">Seline Qureshi</div>
+            <div class="socials2">
+                <a href="https://github.com/qurs3l"><img src="images/GitHub-Mark.png" alt="Git"></a>
+                <a href="www.linkedin.com/in/seline-qureshi"><img src="images/linkedin.jpg" alt="Linkedin"></a>
+                <a href="https://instagram.com/slne174?igshid=NzZlODBkYWE4Ng=="><img src="images/instagram.jpeg" alt="Insta"></a>
+            </div>
         
         </div>
     </header>
+</head>
 </head>
 <body>
     <div class="custom-shape-divider-top-1693693950">
@@ -30,21 +39,48 @@
     </div>
 
     <div class="projects">
-        <div class="project1">
-            <h1 class="Proj1-header">Spotisky</h1>
-            <p class="Proj1-des">Worked with the Spotify API to develop a website that generates a personal horoscope based on listening history.</p>
-        </div>
+        <a href="https://github.com/briancoco/Spoti-sky.git"  class="project1">
+            
+            <h1 class="Proj1-header">01 - Spotisky</h1>
+            <p class="Proj1-des">
+                In fall of my sophomore year, three of my peers and I created a website that generates a personal horoscope based on listening history during Texas A&M's HowdyHack.
+                We worked with the Spotify API to categorize songs by genre and other metrics such as "danceability" and "wordiness". To create the website, we used HTML, CSS along with Python's Flask Framework. Click the box to see the GitHub repository!
+            </p>
+        </a>
     
-        <div class="project2">
-            <h2 class="Proj2-header">School Database</h2>
-            <p class="Proj2-des">Utilized JavaScript and Java to create an interactive user interface to generate reports regarding student attendance data logs.</p>
+        <div class="project2" onclick="window.location.href = 'https://github.com/qurs3l/AttendanceDatabase.git';" >
+           
+                <h2 class="Proj2-header">02 - School Database</h2>
+                <div class="Proj2-des">
+                    <p>
+                        In spring of my sophomore year, I created a project for my Programming Languages class using Java and JavaFX to create an interactive user interface to generate reports regarding student attendance data logs. During this project, I used Object Oriented Programming strategies to divide the data given into separate classes and display the data based on requirements from the user.
+                        Click the box to see the GitHub Repository!
+                    </p>
+                    <p>
+                        <a id="Demo" href="https://youtu.be/51L4o_8qCLw">Project Demo Video</a>
+                    </p>
+                </div>
+            </a>
         </div>
         
-        <div class="project3">
-            <h2 class="Proj3-header">Dungeon Crawler</h2>
-            <p class="Proj3-des">Created simple game using C++ where users fought their way through a dungeon.</p>
-        </div>
+        <a href="https://github.com/qurs3l/DC" class="project3">
+            <h2 class="Proj3-header">03 - Dungeon Crawler</h2>
+            <p class="Proj3-des">
+                During the fall semester of my Sophomore year, I completed a project where I had to implement a game using C++ where users fought their way through a dungeon. I utilized dynamic two-dimensional arrays to manage memory and create the board as well as save user progress through the game. Click the box to see the GitHub repository!
+            </p>
+        </a>
+
+        <a href="https://github.com/qurs3l/Personal-Website.git" class="project4">
+            <h2 class="Proj4-header">04 - Personal Website</h2>
+            <p class="Proj4-des">
+                In my Junior year of college, I created this personal website to showcase my professional presence along with my personality to future employers.
+                I utilized HTML, CSS, and JavaScript to create a personal website with two distinct styles, along with Procreate to draw the artwork for one of the website styles. Through this, I was able to introduce myself to front-end development. Click the box to see the GitHub repository</p>
+        </a>
     
+    </div>
+    <div class = "button">
+        <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+        <script src = "functions.js"></script>
     </div>
 
     <div class="custom-shape-divider-bottom-1693690961">
@@ -52,6 +88,8 @@
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
     </div>
+
+   
     
 </body>
 </html>
